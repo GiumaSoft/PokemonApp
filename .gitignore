@@ -1,0 +1,21 @@
+# See LICENSE folder for this sample’s licensing information.
+#
+# Apple sample code gitignore configuration.
+
+# Finder
+.DS_Store
+
+# Xcode - User files
+xcuserdata/
+/xcuserdata/
+# *.xcworkspace/
+.Index/
+.Build/
+.DerivedData/
+Build/
+DerivedData
+
+# Cocoapods
+
+Podfile.lock
+Pods/

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oK2-dE-ufK" customClass="CatalogViewCell" customModule="PokemonApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="293"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MVb-b0-QI8">
+                <rect key="frame" x="0.0" y="0.0" width="312" height="293"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="G6Z-6x-dEb">
+                        <rect key="frame" x="0.0" y="0.0" width="312" height="289"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="wMA-Mz-dMH">
+                                <rect key="frame" x="25" y="0.0" width="262.5" height="262.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wMA-Mz-dMH" secondAttribute="height" id="i6I-AW-vKN"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCy-zw-H5e">
+                                <rect key="frame" x="135.5" y="268.5" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="G6Z-6x-dEb" secondAttribute="trailing" id="RCf-JK-YQX"/>
+                    <constraint firstItem="G6Z-6x-dEb" firstAttribute="leading" secondItem="MVb-b0-QI8" secondAttribute="leading" id="Xvt-Jg-uyg"/>
+                    <constraint firstAttribute="bottom" secondItem="G6Z-6x-dEb" secondAttribute="bottom" constant="4" id="lsf-cP-8Oa"/>
+                    <constraint firstItem="G6Z-6x-dEb" firstAttribute="top" secondItem="MVb-b0-QI8" secondAttribute="top" id="qXE-3t-oV6"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="312" height="293"/>
+            <connections>
+                <outlet property="imageView" destination="wMA-Mz-dMH" id="0Ot-Gg-xd9"/>
+                <outlet property="label" destination="NCy-zw-H5e" id="ZCm-FW-zpy"/>
+            </connections>
+            <point key="canvasLocation" x="-665.21739130434787" y="94.754464285714278"/>
+        </collectionViewCell>
+    </objects>
+</document>
