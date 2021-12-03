@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  PokemonApp
+
+  Created by Giuseppe Mazzilli on 30/11/21.
+  
+*/
+
+"catalog.controller.title"="Catalogo Pokemon";
+"detail.controller.title"="Dettagli Pokemon";
